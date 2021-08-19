@@ -1,5 +1,5 @@
 ## Blog
-[Webseite](https://jankupper.github.io/blog/) https://jankupper.github.io/blog/
+https://jankupper.github.io/blog/
 
 
 
