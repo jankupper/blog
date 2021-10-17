@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-
-// Jan Feb Mar Apr May Mai Jun Jul Aug Sep Oct Nov Dec
+import Home from './home';
+import Blog from './blog';
 
 class App extends Component {
   state = { posts: [] }
@@ -25,12 +25,13 @@ class App extends Component {
     console.log(this.state.posts);
     return (
       <div className="App">
-        <h1>Posts</h1>
-        {this.state.posts.map(posts =>
-          <div>{posts.path}</div>
-        )}
-
-
+        <meta charset="UTF-8"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+        <link rel="stylesheet" href="./w3.css"></link>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"></link>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+        {/* <Home></Home> */}
+        <Blog></Blog>
       </div>
     );
   }
