@@ -13,18 +13,9 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.get(`./content/content.json`, {}).then(posts => {
+    fetch(`./content/content.json`).then(res => res.json()).then(posts => {
       this.setState({ posts });
     });
-  }
-
-  async get(url) {
-    return await fetch(url, {
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
-    }).then(res => res.json());
   }
 
   navOpen() {
@@ -114,7 +105,7 @@ class App extends Component {
               <p className="w3-center"><em>I'd love your feedback!</em></p>
               <div className="w3-row w3-padding-32 w3-section">
                 <div className="w3-col m4 w3-container">
-                  <img src="/w3images/map.jpg" className="w3-image w3-round" style={{ width: '100%' }} />
+                  <img src="./content/nn.jpeg" alt="" className="w3-image w3-round" style={{ width: '100%' }} />
                 </div>
                 <div className="w3-col m8 w3-panel">
                   <div className="w3-large w3-margin-bottom">
@@ -154,14 +145,14 @@ class App extends Component {
                   <h3>BLOG POSTS</h3>
                   <ul className="w3-ul w3-hoverable">
                     <li className="w3-padding-16">
-                      <img src="./images/woods.jpg" className="w3-left w3-margin-right" style={{ width: '50px' }} />
-                      <span className="w3-large">Lorem</span><br />
-                      <span>Sed mattis nunc</span>
+                      <img src="./content/nn.jpeg" alt="" className="w3-left w3-margin-right" style={{ width: '50px' }} />
+                      <span className="w3-large">{this.state.posts[0] ? this.state.posts[0].title : []}</span><br />
+                      <span>{this.state.posts[0] ? this.state.posts[0].title : []}</span>
                     </li>
                     <li className="w3-padding-16">
-                      <img src="./images/woods.jpg" className="w3-left w3-margin-right" style={{ width: '50px' }} />
-                      <span className="w3-large">Ipsum</span><br />
-                      <span>Praes tinci sed</span>
+                      <img src="./content/nn.jpeg" alt="" className="w3-left w3-margin-right" style={{ width: '50px' }} />
+                      <span className="w3-large">{this.state.posts[1] ? this.state.posts[1].title : []}</span><br />
+                      <span>{this.state.posts[1] ? this.state.posts[1].title : []}</span>
                     </li>
                   </ul>
                 </div>
