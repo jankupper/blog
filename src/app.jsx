@@ -13,11 +13,11 @@ class App extends Component {
     }
   }
 
-  async componentDidMount() {
-    const content = await fetch(`./content/content.json`).then(res => res.json());
-    console.log(content)
-    this.setState({ inspiration: content.inspiration });
-    this.setState({ posts: content.posts });
+  componentDidMount() {
+    fetch(`./content/content.json`).then(res => res.json()).then(content => {
+      this.setState({ inspiration: content.inspiration });
+      this.setState({ posts: content.posts });
+    });
   }
 
   navOpen() {
