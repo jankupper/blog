@@ -47,68 +47,33 @@ class Blog extends Component {
         return bar.reverse();
     }
 
+    container() {
+        var container = [];
+
+        for (let index = 0; index < 6; index++) {
+            const number = this.state.counter * 6 + index;
+            if (this.posts[number]) {
+                container.push(
+                    <div className="w3-third w3-container w3-margin-bottom">
+                        <img src={this.posts[number].img} alt="" style={{ width: '100%' }} className="w3-hover-opacity" />
+                        <div className="w3-container w3-white">
+                            <p><b>{this.posts[number].title}</b></p>
+                            <p>{this.posts[number].introduction}</p>
+                        </div>
+                    </div>
+                );
+            }
+        }
+
+        return container;
+    }
+
     render() {
         return (
             <div>
                 {/* counter Photo Grid*/}
                 < div className="w3-row-padding" >
-                    <div className="w3-third w3-container w3-margin-bottom">
-                        <img src="./content/nn.jpeg" alt="" style={{ width: '100%' }} className="w3-hover-opacity" />
-                        <div className="w3-container w3-white">
-                            <p><b>{this.posts[this.state.counter * 6] ? this.posts[this.state.counter * 6].title : ""}</b></p>
-                            <p>Praesent tincidunt sed tellus ut rutrum.Sed vitae justo condimentum, porta lectus vitae,
-                                ultricies congue
-                                gravida diam non fringilla.</p>
-                        </div>
-                    </div>
-                    <div className="w3-third w3-container w3-margin-bottom">
-                        <img src="./content/nn.jpeg" alt="" style={{ width: '100%' }} className="w3-hover-opacity" />
-                        <div className="w3-container w3-white">
-                            <p><b>{this.posts[(this.state.counter * 6) + 1] ? this.posts[(this.state.counter * 6) + 1].title : ""}</b></p>
-                            <p>Praesent tincidunt sed tellus ut rutrum.Sed vitae justo condimentum, porta lectus vitae,
-                                ultricies congue
-                                gravida diam non fringilla.</p>
-                        </div>
-                    </div>
-                    <div className="w3-third w3-container">
-                        <img src="./content/nn.jpeg" alt="" style={{ width: '100%' }} className="w3-hover-opacity" />
-                        <div className="w3-container w3-white">
-                            <p><b>{this.posts[(this.state.counter * 6) + 2] ? this.posts[(this.state.counter * 6) + 2].title : ""}</b></p>
-                            <p>Praesent tincidunt sed tellus ut rutrum.Sed vitae justo condimentum, porta lectus vitae,
-                                ultricies congue
-                                gravida diam non fringilla.</p>
-                        </div>
-                    </div>
-                </div >
-                {/* Second Photo Grid*/}
-                < div className="w3-row-padding" >
-                    <div className="w3-third w3-container w3-margin-bottom">
-                        <img src="./content/nn.jpeg" alt="" style={{ width: '100%' }} className="w3-hover-opacity" />
-                        <div className="w3-container w3-white">
-                            <p><b>{this.posts[(this.state.counter * 6) + 3] ? this.posts[(this.state.counter * 6) + 3].title : ""}</b></p>
-                            <p>Praesent tincidunt sed tellus ut rutrum.Sed vitae justo condimentum, porta lectus vitae,
-                                ultricies congue
-                                gravida diam non fringilla.</p>
-                        </div>
-                    </div>
-                    <div className="w3-third w3-container w3-margin-bottom">
-                        <img src="./content/nn.jpeg" alt="" style={{ width: '100%' }} className="w3-hover-opacity" />
-                        <div className="w3-container w3-white">
-                            <p><b>{this.posts[(this.state.counter * 6) + 4] ? this.posts[(this.state.counter * 6) + 4].title : ""}</b></p>
-                            <p>Praesent tincidunt sed tellus ut rutrum.Sed vitae justo condimentum, porta lectus vitae,
-                                ultricies congue
-                                gravida diam non fringilla.</p>
-                        </div>
-                    </div>
-                    <div className="w3-third w3-container">
-                        <img src="./content/nn.jpeg" alt="" style={{ width: '100%' }} className="w3-hover-opacity" />
-                        <div className="w3-container w3-white">
-                            <p><b>{this.posts[(this.state.counter * 6) + 5] ? this.posts[(this.state.counter * 6) + 5].title : ""}</b></p>
-                            <p>Praesent tincidunt sed tellus ut rutrum.Sed vitae justo condimentum, porta lectus vitae,
-                                ultricies congue
-                                gravida diam non fringilla.</p>
-                        </div>
-                    </div>
+                    {this.container()}
                 </div >
                 {/* Pagination */}
                 < div className="w3-center w3-padding-32" >

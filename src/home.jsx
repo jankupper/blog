@@ -6,17 +6,27 @@ import BlogEntry from './blogEntry';
 class Home extends Component {
   constructor(props) {
     super(props);
+    console.log(this.props);
+    this.inspiration = this.props.inspiration;
     this.posts = this.props.posts;
   }
 
-  componentDidMount() {
-  }
+  popularPost() {
+    var popularPost = [];
 
-  async getText(url) {
-    const res = await fetch(url);
-    const text = await res.text();
-    console.log(text)
-    return text;
+    for (let index = 0; index < 4; index++) {
+      if (this.posts[index]) {
+        popularPost.push(
+          <li className="w3-padding-16">
+            <img src={this.posts[index].img} alt="" className="w3-left w3-margin-right" style={{ width: '50px' }} />
+            <span className="w3-large">{this.posts[index].title}</span><br />
+            <span>{(this.posts[index].introduction).substr(0, 50) + "..."}</span>
+          </li>
+        );
+      }
+    }
+
+    return popularPost;
   }
 
   render() {
@@ -35,7 +45,7 @@ class Home extends Component {
           </div>
           {/* Introduction menu */}
           <div className="w3-col l4">
-            {/* About Card */}
+            {/* About Card
             <div className="w3-card w3-margin w3-margin-top">
               <img src="./content/nn.jpeg" alt="" style={{ width: '100%' }} />
               <div className="w3-container w3-white">
@@ -44,33 +54,14 @@ class Home extends Component {
                   lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
               </div>
             </div>
-            <hr />
+            <hr /> */}
             {/* Posts */}
             <div className="w3-card w3-margin">
               <div className="w3-container w3-padding">
                 <h4>Popular Posts</h4>
               </div>
               <ul className="w3-ul w3-hoverable w3-white">
-                <li className="w3-padding-16">
-                  <img src="./content/nn.jpeg" alt="" className="w3-left w3-margin-right" style={{ width: '50px' }} />
-                  <span className="w3-large">Lorem</span><br />
-                  <span>Sed mattis nunc</span>
-                </li>
-                <li className="w3-padding-16">
-                  <img src="./content/nn.jpeg" alt="" className="w3-left w3-margin-right" style={{ width: '50px' }} />
-                  <span className="w3-large">Ipsum</span><br />
-                  <span>Praes tinci sed</span>
-                </li>
-                <li className="w3-padding-16">
-                  <img src="./content/nn.jpeg" alt="" className="w3-left w3-margin-right" style={{ width: '50px' }} />
-                  <span className="w3-large">Dorum</span><br />
-                  <span>Ultricies congue</span>
-                </li>
-                <li className="w3-padding-16 w3-hide-medium w3-hide-small">
-                  <img src="./content/nn.jpeg" alt="" className="w3-left w3-margin-right" style={{ width: '50px' }} />
-                  <span className="w3-large">Mingsum</span><br />
-                  <span>Lorem ipsum dipsum</span>
-                </li>
+                {this.popularPost()}
               </ul>
             </div>
             <hr />
@@ -104,12 +95,13 @@ class Home extends Component {
               </div>
               <div className="w3-row-padding w3-white">
                 <div className="w3-col s6">
-                  <p><img src="./content/nn.jpeg" alt="" style={{ width: '100%' }} /></p>
-                  <p><img src="./content/nn.jpeg" alt="" style={{ width: '100%' }} /></p>
+                  <p><img src={this.inspiration[0] ? this.inspiration[0] : ""} alt="" style={{ width: '100%' }} /></p>
+                  <p><img src={this.inspiration[1] ? this.inspiration[1] : ""} alt="" style={{ width: '100%' }} /></p>
                 </div>
                 <div className="w3-col s6">
-                  <p><img src="./content/nn.jpeg" alt="" style={{ width: '100%' }} className="w3-grayscale" /></p>
-                  <p><img src="./content/nn.jpeg" alt="" style={{ width: '100%' }} /></p>
+                  <p><img src={this.inspiration[2] ? this.inspiration[2] : ""} alt="" style={{ width: '100%' }} /></p>
+                  {/* className="w3-grayscale" */}
+                  <p><img src={this.inspiration[2] ? this.inspiration[3] : ""} alt="" style={{ width: '100%' }} /></p>
                 </div>
               </div>
             </div>

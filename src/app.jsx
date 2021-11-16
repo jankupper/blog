@@ -8,14 +8,16 @@ class App extends Component {
     this.state = {
       page: "home",
       nav: "none",
+      inspiration: [],
       posts: []
     }
   }
 
-  componentDidMount() {
-    fetch(`./content/content.json`).then(res => res.json()).then(posts => {
-      this.setState({ posts });
-    });
+  async componentDidMount() {
+    const content = await fetch(`./content/content.json`).then(res => res.json());
+    console.log(content)
+    this.setState({ inspiration: content.inspiration });
+    this.setState({ posts: content.posts });
   }
 
   navOpen() {
@@ -33,22 +35,22 @@ class App extends Component {
   }
 
   main() {
-    switch (this.state.page) {
-      case "blog":
-        return <Blog posts={this.state.posts}></Blog>
-        break;
-      // case "bla":
-      //   return <Blog></Blog>
-      //   break;
-      default:
-        return <Home posts={this.state.posts}></Home>
-        break;
+    if (this.state.posts.length) {
+      switch (this.state.page) {
+        case "blog":
+          return <Blog posts={this.state.posts}></Blog>
+          break;
+        // case "bla":
+        //   return <Blog></Blog>
+        //   break;
+        default:
+          return <Home inspiration={this.state.inspiration} posts={this.state.posts}></Home>
+          break;
+      }
     }
-
   }
 
   render() {
-    console.log(this.state);
     return (
       <div className="App">
         <meta charset="UTF-8"></meta>
@@ -67,7 +69,6 @@ class App extends Component {
         </a>
         <img src="/w3images/avatar_g2.jpg" style="width:45%;" class="w3-round"><br><br> */}
               <h4><b>PORTFOLIO</b></h4>
-              <p className="w3-text-grey">Template by W3.CSS</p>
             </div>
             <div className="w3-bar-block">
               <a onClick={() => this.navHandle("home")} className={"w3-bar-item w3-button w3-padding" + ((this.state.page == "home") ? " w3-text-teal" : "")}><i className="fa fa-th-large fa-fw w3-margin-right" />HOME</a>
@@ -105,7 +106,7 @@ class App extends Component {
               <p className="w3-center"><em>I'd love your feedback!</em></p>
               <div className="w3-row w3-padding-32 w3-section">
                 <div className="w3-col m4 w3-container">
-                  <img src="./content/nn.jpeg" alt="" className="w3-image w3-round" style={{ width: '100%' }} />
+                  <img src="./content/rs.png" alt="" className="w3-image w3-round" style={{ width: '100%' }} />
                 </div>
                 <div className="w3-col m8 w3-panel">
                   <div className="w3-large w3-margin-bottom">
@@ -139,20 +140,19 @@ class App extends Component {
                   <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
                     congue
                     gravida diam non fringilla.</p>
-                  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
                 </div>
                 <div className="w3-third">
                   <h3>BLOG POSTS</h3>
                   <ul className="w3-ul w3-hoverable">
                     <li className="w3-padding-16">
-                      <img src="./content/nn.jpeg" alt="" className="w3-left w3-margin-right" style={{ width: '50px' }} />
-                      <span className="w3-large">{this.state.posts[0] ? this.state.posts[0].title : []}</span><br />
-                      <span>{this.state.posts[0] ? this.state.posts[0].title : []}</span>
+                      <img src={this.state.posts[0] ? this.state.posts[0].img : ""} alt="" className="w3-left w3-margin-right" style={{ width: '50px' }} />
+                      <span className="w3-large">{this.state.posts[0] ? this.state.posts[0].title : ""}</span><br />
+                      <span>{this.state.posts[0] ? (this.state.posts[0].introduction).substr(0, 50) + "..." : ""}</span>
                     </li>
                     <li className="w3-padding-16">
-                      <img src="./content/nn.jpeg" alt="" className="w3-left w3-margin-right" style={{ width: '50px' }} />
-                      <span className="w3-large">{this.state.posts[1] ? this.state.posts[1].title : []}</span><br />
-                      <span>{this.state.posts[1] ? this.state.posts[1].title : []}</span>
+                      <img src={this.state.posts[1] ? this.state.posts[1].img : ""} alt="" className="w3-left w3-margin-right" style={{ width: '50px' }} />
+                      <span className="w3-large">{this.state.posts[1] ? this.state.posts[1].title : ""}</span><br />
+                      <span>{this.state.posts[1] ? (this.state.posts[1].introduction).substr(0, 50) + "..." : ""}</span>
                     </li>
                   </ul>
                 </div>
