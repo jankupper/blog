@@ -5,7 +5,7 @@
     <br></br>
     Nach dem sich alle Teams zur Besprechung um 09:30 Uhr versammelt haben, wurden erstmals die Gegner eingeschätzt, zwei bis drei bekannte Gesichter waren dabei und schnell wurde klar, dass das Campana Racing Team kein Glück bei der Auslosung hatte. Die gesamte Gruppe in der rechten Hälfte der Tabelle bestand aus augenscheinlich sehr starken Teams und so ging es für die vier als fünftes an den Start.
     <br></br>
-    <img src="./content/2021/sep/badDuehrrheim.jpeg" alt="Düsseldorfer Stadtmeisterschaften">
+    <img style={{ width: "100%" }} src="./content/2021/sep/badDuehrrheim.jpeg" alt="Düsseldorfer Stadtmeisterschaften">
     </img>
     <br></br>
     Bei bestem Rennwetter starteten die vier in ihr erstes Rennen und konnten sich auf die kurze Sprintdistanz einstellen, die sie so zuvor noch nie in einem Wettkampf gefahren sind. Nach gerade mal 5 Minuten und 43 Sekunden war der erste Lauf geschafft und das Team eine Runde weiter.
