@@ -7,13 +7,29 @@
     ],
     "posts": [
         {
-            "date": "September 17, 2021",
+            "date": "September 20, 2021",
             "title": "Bad Dührrheim",
             "description": "Rennrad-Etappenrennen über 3 Tage",
             "introduction": "Ganz nach dem Motto „Ride like a Pro“ wurden die Fahrer über das gesamte Rennen von Kameras und einem Helikopter begleitet, die das Renngeschehen live ins Internet gestreamt haben. Außerdem konnten sich alle Fahrer Verpflegung von Motorrädern nehmen, die sich im Fahrerfeld befanden.",
             "img": "./content/2021/sep/badDuehrrheim.jpeg",
             "img1200": "./content/2021/sep/badDuehrrheim1200.jpeg",
             "path": "./content/2021/sep/badDuehrrheim.jsx",
+            "tags": [
+                "bikepacking",
+                "mtb",
+                "mountainbike",
+                "travel"
+            ],
+            "main": true
+        },
+        {
+            "date": "September 13, 2021",
+            "title": "Rund um die Kö",
+            "description": "Offene Düsseldorfer Stadtmeisterschaften im 4er Verfolgerrennen",
+            "introduction": "Kurzentschlossen wurde sich entschieden an den Stadtmeisterschaften im 4er Verfolgerrennen teilzunehmen, eine Disziplin, die bis dato für alle unbekannt war.",
+            "img": "./content/2021/sep/badDuehrrheim.jpeg",
+            "img1200": "./content/2021/sep/badDuehrrheim1200.jpeg",
+            "path": "./content/2021/sep/rundUmDieKoe.jsx",
             "tags": [
                 "bikepacking",
                 "mtb",
