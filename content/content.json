@@ -7,6 +7,22 @@
     ],
     "posts": [
         {
+            "date": "April 30, 2022",
+            "title": "Mallorca 312",
+            "description": "Start beim legänderen Inselrennen M312",
+            "introduction": "Vergangenes Wochenende ging es für die drei Adler Julian Koschik, Jan Küpper und Felix Pembaur an den Start des berühmten Mallorca Inselrennen M312.",
+            "img": "./content/2022/apr/mallorca.jpeg",
+            "img1200": "./content/2022/apr/mallorca800.jpeg",
+            "path": "./content/2022/apr/mallorca.jsx",
+            "tags": [
+                "bikepacking",
+                "mtb",
+                "mountainbike",
+                "travel"
+            ],
+            "main": false
+        },
+        {
             "date": "September 20, 2021",
             "title": "Bad Dührrheim",
             "description": "Rennrad-Etappenrennen über 3 Tage",
