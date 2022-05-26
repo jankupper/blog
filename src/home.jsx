@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import BlogEntry from './blogEntry';
+import BlogEntryPreview from './blogEntryPreview';
 
 // Jan Feb Mar Apr May Mai Jun Jul Aug Sep Oct Nov Dec
 
@@ -7,20 +7,19 @@ class Home extends Component {
   constructor(props) {
     super(props);
     console.log(this.props);
-    this.inspiration = this.props.inspiration;
-    this.posts = this.props.posts;
+    this.state = this.props.state;
   }
 
   popularPost() {
     var popularPost = [];
 
     for (let index = 0; index < 4; index++) {
-      if (this.posts[index]) {
+      if (this.state.posts[index]) {
         popularPost.push(
           <li className="w3-padding-16">
-            <img src={this.posts[index].img} alt="" className="w3-left w3-margin-right" style={{ width: '50px' }} />
-            <span className="w3-large">{this.posts[index].title}</span><br />
-            <span>{(this.posts[index].introduction).substr(0, 50) + "..."}</span>
+            <img src={this.state.posts[index].img1200} alt="" className="w3-left w3-margin-right" style={{ width: '70px' }} />
+            <span className="w3-large">{this.state.posts[index].title}</span><br />
+            <span>{(this.state.posts[index].introduction).substr(0, 50) + "..."}</span>
           </li>
         );
       }
@@ -37,10 +36,10 @@ class Home extends Component {
           {/* Blog entries */}
           <div className="w3-col l8 s12">
             {/* Blog entry */}
-            <BlogEntry post={this.posts[0] ? this.posts[0] : []}></BlogEntry>
+            <BlogEntryPreview post={this.state.posts[0] ? this.state.posts[0] : []} readMore={() => this.props.readMore(0)}></BlogEntryPreview>
             <hr />
             {/* Blog entry */}
-            <BlogEntry post={this.posts[1] ? this.posts[1] : []}></BlogEntry>
+            <BlogEntryPreview post={this.state.posts[1] ? this.state.posts[1] : []} readMore={() => this.props.readMore(1)}></BlogEntryPreview>
             {/* END BLOG ENTRIES */}
           </div>
           {/* Introduction menu */}
@@ -95,13 +94,13 @@ class Home extends Component {
               </div>
               <div className="w3-row-padding w3-white">
                 <div className="w3-col s6">
-                  <p><img src={this.inspiration[0] ? this.inspiration[0] : ""} alt="" style={{ width: '100%' }} /></p>
-                  <p><img src={this.inspiration[1] ? this.inspiration[1] : ""} alt="" style={{ width: '100%' }} /></p>
+                  <p><img src={this.state.inspiration[0] ? this.state.inspiration[0] : ""} alt="" style={{ width: '100%' }} /></p>
+                  <p><img src={this.state.inspiration[1] ? this.state.inspiration[1] : ""} alt="" style={{ width: '100%' }} /></p>
                 </div>
                 <div className="w3-col s6">
-                  <p><img src={this.inspiration[2] ? this.inspiration[2] : ""} alt="" style={{ width: '100%' }} /></p>
+                  <p><img src={this.state.inspiration[2] ? this.state.inspiration[2] : ""} alt="" style={{ width: '100%' }} /></p>
                   {/* className="w3-grayscale" */}
-                  <p><img src={this.inspiration[2] ? this.inspiration[3] : ""} alt="" style={{ width: '100%' }} /></p>
+                  <p><img src={this.state.inspiration[2] ? this.state.inspiration[3] : ""} alt="" style={{ width: '100%' }} /></p>
                 </div>
               </div>
             </div>
@@ -113,10 +112,10 @@ class Home extends Component {
               <div className="w3-container w3-xlarge w3-padding">
                 <i className="fa fa-facebook-official w3-hover-opacity" />
                 <i className="fa fa-instagram w3-hover-opacity" />
-                <i className="fa fa-snapchat w3-hover-opacity" />
+                {/* <i className="fa fa-snapchat w3-hover-opacity" />
                 <i className="fa fa-pinterest-p w3-hover-opacity" />
                 <i className="fa fa-twitter w3-hover-opacity" />
-                <i className="fa fa-linkedin w3-hover-opacity" />
+                <i className="fa fa-linkedin w3-hover-opacity" /> */}
               </div>
             </div>
             <hr />

@@ -54,7 +54,7 @@ class Blog extends Component {
             const number = this.state.counter * 6 + index;
             if (this.posts[number]) {
                 container.push(
-                    <div className="w3-third w3-container w3-margin-bottom">
+                    <div className="w3-third w3-container w3-margin-bottom" style={{ width: "100%" }} onClick={() => this.props.readMore(number)}>
                         <img src={this.posts[number].img} alt="" style={{ width: '100%' }} className="w3-hover-opacity" />
                         <div className="w3-container w3-white">
                             <p><b>{this.posts[number].title}</b></p>
@@ -72,7 +72,7 @@ class Blog extends Component {
         return (
             <div>
                 {/* counter Photo Grid*/}
-                < div className="w3-row-padding" >
+                < div className="w3-row-padding" style={{ "margin": "0 auto", "display": "grid", "grid-gap": "1rem", "grid-template-columns": "repeat(3, 1fr)", content: null }}>
                     {this.container()}
                 </div >
                 {/* Pagination */}

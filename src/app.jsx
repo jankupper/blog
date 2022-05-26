@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Home from './home';
 import Blog from './blog';
+import BlogEntry from './blogEntry';
+import Post from './post';
 
 class App extends Component {
   constructor(props) {
@@ -9,7 +11,8 @@ class App extends Component {
       page: "home",
       nav: "none",
       inspiration: [],
-      posts: []
+      posts: [],
+      index: undefined,
     }
   }
 
@@ -34,17 +37,24 @@ class App extends Component {
     this.setState(this.state);
   }
 
+  readMore(index) {
+    this.state.index = index;
+    this.state.nav = false;
+    this.state.page = "blogEntry";
+    this.setState(this.state);
+  }
+
   main() {
     if (this.state.posts.length) {
       switch (this.state.page) {
         case "blog":
-          return <Blog posts={this.state.posts}></Blog>
+          return <Blog posts={this.state.posts} readMore={(index) => this.readMore(index)} ></ Blog>
           break;
-        // case "bla":
-        //   return <Blog></Blog>
-        //   break;
+        case "blogEntry":
+          return <BlogEntry post={this.state.posts[this.state.index] ? this.state.posts[this.state.index] : []}></BlogEntry>
+          break;
         default:
-          return <Home inspiration={this.state.inspiration} posts={this.state.posts}></Home>
+          return <Home state={this.state} readMore={(index) => this.readMore(index)}></Home>
           break;
       }
     }
@@ -78,10 +88,10 @@ class App extends Component {
             <div className="w3-panel w3-large">
               <i className="fa fa-facebook-official w3-hover-opacity" />
               <i className="fa fa-instagram w3-hover-opacity" />
-              <i className="fa fa-snapchat w3-hover-opacity" />
+              {/* <i className="fa fa-snapchat w3-hover-opacity" />
               <i className="fa fa-pinterest-p w3-hover-opacity" />
               <i className="fa fa-twitter w3-hover-opacity" />
-              <i className="fa fa-linkedin w3-hover-opacity" />
+              <i className="fa fa-linkedin w3-hover-opacity" /> */}
             </div>
           </nav>
           {/* Overlay effect when opening sidebar on small screens */}
@@ -110,11 +120,12 @@ class App extends Component {
                 </div>
                 <div className="w3-col m8 w3-panel">
                   <div className="w3-large w3-margin-bottom">
-                    <i className="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right" /> Chicago, US<br />
-                    <i className="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right" /> Phone: +00 151515<br />
-                    <i className="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right" /> Email: mail@mail.com<br />
+                    <i className="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right" /> Remscheid, DE<br />
+                    {/* <i className="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right" /> Phone: +00 151515<br /> */}
+                    <i className="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right" /> Email: jan.kuepper1998@gmail.com<br />
                   </div>
-                  <p>Swing by for a cup of <i className="fa fa-coffee" />, or leave me a note:</p>
+                  {/* <p>Swing by for a cup of <i className="fa fa-coffee" />, or leave me a note:</p> */}
+                  <p>leave me a note:</p>
                   <form action="/action_page.php" target="_blank">
                     <div className="w3-row-padding" style={{ margin: '0 -16px 8px -16px' }}>
                       <div className="w3-half">
@@ -137,20 +148,20 @@ class App extends Component {
               <div className="w3-row-padding">
                 <div className="w3-third">
                   <h3>FOOTER</h3>
-                  <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
+                  {/* <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
                     congue
-                    gravida diam non fringilla.</p>
+                    gravida diam non fringilla.</p> */}
                 </div>
                 <div className="w3-third">
                   <h3>BLOG POSTS</h3>
                   <ul className="w3-ul w3-hoverable">
                     <li className="w3-padding-16">
-                      <img src={this.state.posts[0] ? this.state.posts[0].img : ""} alt="" className="w3-left w3-margin-right" style={{ width: '50px' }} />
+                      <img src={this.state.posts[0] ? this.state.posts[0].img1200 : ""} alt="" className="w3-left w3-margin-right" style={{ width: '70px' }} />
                       <span className="w3-large">{this.state.posts[0] ? this.state.posts[0].title : ""}</span><br />
                       <span>{this.state.posts[0] ? (this.state.posts[0].introduction).substr(0, 50) + "..." : ""}</span>
                     </li>
                     <li className="w3-padding-16">
-                      <img src={this.state.posts[1] ? this.state.posts[1].img : ""} alt="" className="w3-left w3-margin-right" style={{ width: '50px' }} />
+                      <img src={this.state.posts[1] ? this.state.posts[1].img1200 : ""} alt="" className="w3-left w3-margin-right" style={{ width: '70px' }} />
                       <span className="w3-large">{this.state.posts[1] ? this.state.posts[1].title : ""}</span><br />
                       <span>{this.state.posts[1] ? (this.state.posts[1].introduction).substr(0, 50) + "..." : ""}</span>
                     </li>

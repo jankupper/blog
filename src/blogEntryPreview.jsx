@@ -29,7 +29,15 @@ class BlogEntry extends Component {
                 </div>
                 <div className="w3-container">
                     {/* Inhalt */}
-                    <div dangerouslySetInnerHTML={{ __html: this.state.text }} />
+                    <div dangerouslySetInnerHTML={{ __html: this.state.text.substr(0, 380) + "..." }} />
+                    <div className="w3-row">
+                        <div className="w3-col m8 s12">
+                            <p><button className="w3-button w3-padding-large w3-white w3-border" onClick={() => this.props.readMore()}><b>READ MORE »</b></button></p>
+                        </div>
+                        <div className="w3-col m4 w3-hide-small">
+                            <p><span className="w3-padding-large w3-right"><b>Comments </b> <span className="w3-tag">0</span></span></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         );
