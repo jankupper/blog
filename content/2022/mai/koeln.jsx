@@ -1,11 +1,11 @@
 <p>
     Am vergangenen Sonntag fand die 104. Auflage von “Rund um Köln“ statt. Das Radrennen Rund um Köln ist das älteste noch existierende deutsche Eintagesrennen.
     <br></br>
-    <img style="width: 100%" src="./content/2022/mai/koeln01.jpg" alt="das Campana Racing Team">
-    </img>
-    <br></br>
     Anja Berg, Tobias Berg, Julian Koschik, Felix Pembaur, Julius Drees und Jan Küpper vom RV Adler ging mit dem Campana Racing Team an den Start. Außerdem gingen Martin Kieczka und Jens Landwehr vom RV Adler an den Start.
     Alle nahmen die 70 km lange Strecke mit rund 500 Höhenmetern unter die Reifen. Mit fast 2.000 Teilnehmern auf der Distanz gehört „Rund um Köln“ zu einem der größten und beliebtesten Straßenrennen in Deutschland und ist auch Teil des German Cycling Cup.
+    <br></br>
+    <img style="width: 100%" src="./content/2022/mai/koeln01.jpg" alt="das Campana Racing Team">
+    </img>
     <br></br>
     Pünktlich um 11 Uhr fiel der Startschuss für das Feld und es ging gleich heiß her. Hochmotiviert und voller Vorfreude jagte das Feld mit über 50km/h durch die Innenstadt von Köln. Rad an Rad schlängelte sich das große Feld um die zahlreichen Verkehrsinseln und Kreisverkehre. Hier galt es, mit höchster Vorsicht einen Sturz zu vermeiden, um die beste Ausgangslage für den Anstieg von Altenberg nach Neschen/Bechen zu ergattern.
     <br></br>
