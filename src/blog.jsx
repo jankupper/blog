@@ -72,7 +72,7 @@ class Blog extends Component {
         return (
             <div>
                 {/* counter Photo Grid*/}
-                < div className="w3-row-padding" style={{ "margin": "0 auto", "display": "grid", "grid-gap": "1rem", "grid-template-columns": "repeat(3, 1fr)", content: null }}>
+                < div className="w3-row-padding cards">
                     {this.container()}
                 </div >
                 {/* Pagination */}
