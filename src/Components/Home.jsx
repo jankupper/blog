@@ -30,10 +30,10 @@ function Home(props) {
         {/* Blog entries */}
         <div className="w3-col l8 s12">
           {/* Blog entry */}
-          <BlogEntryPreview post={props.posts[0] ? props.posts[0] : []} readMore={() => props.readMore(0)}></BlogEntryPreview>
+          <BlogEntryPreview post={props.posts[0] ? props.posts[0] : []} number={0}></BlogEntryPreview>
           <hr />
           {/* Blog entry */}
-          <BlogEntryPreview post={props.posts[1] ? props.posts[1] : []} readMore={() => props.readMore(1)}></BlogEntryPreview>
+          <BlogEntryPreview post={props.posts[1] ? props.posts[1] : []} number={1}></BlogEntryPreview>
           {/* END BLOG ENTRIES */}
         </div>
         {/* Introduction menu */}

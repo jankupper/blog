@@ -2,8 +2,8 @@ import React, { Component, useEffect, useState } from 'react';
 // import Navbar from './Components/Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Components/Home';
-// import Collections from './Components/Collections';
-// import Product from './Components/Product';
+import Blog from './Components/Blog';
+import BlogEntry from './Components/BlogEntry';
 // import Toast from './Components/Toast';
 // import Cart from './Components/Cart';
 import {
@@ -15,11 +15,9 @@ import { Link } from 'react-router-dom';
 import './Components/w3.css';
 
 function App(props) {
-    const [page, setPage] = useState("home");
     const [nav, setNav] = useState("none");
     const [inspiration, setInspiration] = useState([]);
     const [posts, setPosts] = useState([]);
-    const [index, setIndex] = useState(undefined);
 
     // Warenkorb beim Laden der Seite aus dem Local Storage wiederherstellen
     // React.useEffect(() => {
@@ -29,10 +27,14 @@ function App(props) {
     //     }
     // }, []);
 
-    function componentDidMount() {
-        fetch(`./content/content.json`).then(res => res.json()).then(content => {
-        setInspiration({ inspiration: content.inspiration });
-          setPosts({ posts: content.posts });
+    React.useEffect(() => {
+        getText();
+    }, []);
+
+    function getText() {
+        fetch(`${window.location.origin}/content/content.json`).then(res => res.json()).then(content => {
+            setInspiration(content.inspiration);
+            setPosts(content.posts);
         });
     }
     
@@ -46,17 +48,11 @@ function App(props) {
     
     function  navHandle(page) {
         setNav(false);
-        setPage(page);
-    }
-    
-    function  readMore(index) {
-        setIndex(index);
-        setNav(false);
-        setPage("blogEntry");
     }
 
     return (
         <BrowserRouter>
+        {console.log(posts)}
         <div className="App">
             <meta charset="UTF-8"></meta>
             <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
@@ -77,7 +73,8 @@ function App(props) {
                 </div>
                 <div className="w3-bar-block">
                 <Link to="/" className="nav-link">HOME</Link>
-                <Link to="/shop/cart" className="nav-link">BLOG</Link>
+                <br></br>
+                <Link to="/blog" className="nav-link">BLOG</Link>
                 {/* <a onClick={() => navHandle("home")} className={"w3-bar-item w3-button w3-padding" + ((page == "home") ? " w3-text-teal" : "")}><i className="fa fa-th-large fa-fw w3-margin-right" />HOME</a>
                 <a onClick={() => navHandle("blog")} className={"w3-bar-item w3-button w3-padding" + ((page == "blog") ? " w3-text-teal" : "")}><i className="fa fa-user fa-fw w3-margin-right" />BLOG</a> */}
                 <a href="#contact" onClick={() => navHandle("contact")} className="w3-bar-item w3-button w3-padding"><i className="fa fa-envelope fa-fw w3-margin-right" />CONTACT</a>
@@ -105,9 +102,9 @@ function App(props) {
                 </div>
                 </header>
                 <Routes >
-                    <Route exact path="/" element={<Home posts={posts} inspiration={inspiration} readMore={(index) => readMore(index)}></Home>}></Route>
-                    {/* <Route exact path="/blog" element={<Blog posts={posts} readMore={(index) => readMore(index)} ></ Blog>}></Route>
-                    <Route exact path="/blog/:id" element={<BlogEntry post={posts[index] ? posts[index] : []}></BlogEntry>}></Route> */}
+                    <Route exact path="/" element={<Home posts={posts} inspiration={inspiration}></Home>}></Route>
+                    <Route exact path="/blog" element={<Blog posts={posts} ></ Blog>}></Route>
+                    <Route exact path="/blog/:id" element={<BlogEntry posts={posts}></BlogEntry>}></Route>
                 </Routes >
                 {/* Container (Contact Section) */}
                 <div className="w3-content w3-container w3-padding-64" id="contact">

@@ -1,0 +1,90 @@
+{
+    "inspiration": [
+        "./content/i01.jpeg",
+        "./content/i04.jpeg",
+        "./content/i02.jpeg",
+        "./content/i03.jpeg"
+    ],
+    "posts": [
+        {
+            "date": "Mai 22, 2022",
+            "title": "104. Rund um Köln",
+            "description": "Bei Rund um Köln abgeräumt",
+            "introduction": "Für das Team war es ein besonderes Erlebnis, bei einem solch großen und international bekannten Rennen mehrfach auf dem Podium zu stehen, zumal es auch noch das „Heimrennen“ ist.",
+            "img": "./content/2022/mai/koeln.jpg",
+            "img1200": "./content/2022/mai/koeln800.jpg",
+            "path": "./content/2022/mai/koeln.jsx",
+            "tags": [
+                "bikepacking",
+                "mtb",
+                "mountainbike",
+                "travel"
+            ],
+            "main": false
+        },
+        {
+            "date": "April 30, 2022",
+            "title": "Mallorca 312",
+            "description": "Start beim legänderen Inselrennen M312",
+            "introduction": "Vergangenes Wochenende ging es für die drei Adler Julian Koschik, Jan Küpper und Felix Pembaur an den Start des berühmten Mallorca Inselrennen M312.",
+            "img": "./content/2022/apr/mallorca.jpg",
+            "img1200": "./content/2022/apr/mallorca800.jpg",
+            "path": "./content/2022/apr/mallorca.jsx",
+            "tags": [
+                "bikepacking",
+                "mtb",
+                "mountainbike",
+                "travel"
+            ],
+            "main": false
+        },
+        {
+            "date": "September 20, 2021",
+            "title": "Bad Dührrheim",
+            "description": "Rennrad-Etappenrennen über 3 Tage",
+            "introduction": "Ganz nach dem Motto „Ride like a Pro“ wurden die Fahrer über das gesamte Rennen von Kameras und einem Helikopter begleitet.",
+            "img": "./content/2021/sep/badDuehrrheim.jpeg",
+            "img1200": "./content/2021/sep/badDuehrrheim1200.jpeg",
+            "path": "./content/2021/sep/badDuehrrheim.jsx",
+            "tags": [
+                "bikepacking",
+                "mtb",
+                "mountainbike",
+                "travel"
+            ],
+            "main": false
+        },
+        {
+            "date": "September 13, 2021",
+            "title": "Rund um die Kö",
+            "description": "Offene Düsseldorfer Stadtmeisterschaften im 4er Verfolgerrennen",
+            "introduction": "Kurzentschlossen wurde sich entschieden an den Stadtmeisterschaften im 4er Verfolgerrennen teilzunehmen, eine Disziplin, die bis dato für alle unbekannt war.",
+            "img": "./content/2021/sep/badDuehrrheim.jpeg",
+            "img1200": "./content/2021/sep/badDuehrrheim1200.jpeg",
+            "path": "./content/2021/sep/rundUmDieKoe.jsx",
+            "tags": [
+                "bikepacking",
+                "mtb",
+                "mountainbike",
+                "travel"
+            ],
+            "main": true
+        },
+        {
+            "date": "Juli 29, 2021",
+            "title": "Bikepacking Westalpen",
+            "description": "Alpenüberquerung Italien - Frankreich in nur 3 Tagen",
+            "introduction": "Das bis jetzt schönste Radsport Erlebnis in meinem Leben. Ein aktionreicher Urlaub voller Emotionen und Eindrücken.",
+            "img": "./content/2021/jul/westAlps.jpeg",
+            "img1200": "./content/2021/jul/westAlps1200.jpeg",
+            "path": "./content/2021/jul/westAlps.jsx",
+            "tags": [
+                "bikepacking",
+                "mtb",
+                "mountainbike",
+                "travel"
+            ],
+            "main": true
+        }
+    ]
+}
