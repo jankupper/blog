@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 // Jan Feb Mar Apr May Mai Jun Jul Aug Sep Oct Nov Dec
 
-class BlogEntry extends Component {
+class BlogEntryPreview extends Component {
     constructor(props) {
         super(props);
         this.state = { text: "" };
@@ -44,4 +44,4 @@ class BlogEntry extends Component {
     }
 }
 
-export default BlogEntry;
+export default BlogEntryPreview;
