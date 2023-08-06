@@ -1,5 +1,6 @@
 import React, { Component, useEffect, useState } from 'react';
 import BlogEntryPreview from './BlogEntryPreview';
+import { Link } from 'react-router-dom';
 
 // Jan Feb Mar Apr May Mai Jun Jul Aug Sep Oct Nov Dec
 
@@ -12,9 +13,11 @@ function Home(props) {
       if (props.posts[index]) {
         popularPost.push(
           <li className="w3-padding-16">
-            <img src={props.posts[index].img1200} alt="" className="w3-left w3-margin-right" style={{ width: '70px' }} />
-            <span className="w3-large">{props.posts[index].title}</span><br />
-            <span>{(props.posts[index].introduction).substr(0, 50) + "..."}</span>
+            <Link to={`/blog/${index}`} style={{ "text-decoration": "unset" }}>
+              <img src={props.posts[index].img1200} alt="" className="w3-left w3-margin-right" style={{ width: '70px' }} />
+              <span className="w3-large">{props.posts[index].title}</span><br />
+              <span>{(props.posts[index].introduction).substr(0, 50) + "..."}</span>
+            </Link>
           </li>
         );
       }

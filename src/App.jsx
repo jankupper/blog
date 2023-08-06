@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Components/Home';
 import Blog from './Components/Blog';
 import BlogEntry from './Components/BlogEntry';
+import Impressum from './Components/Impressum';
 // import Toast from './Components/Toast';
 // import Cart from './Components/Cart';
 import {
@@ -52,7 +53,6 @@ function App(props) {
 
     return (
         <BrowserRouter>
-        {console.log(posts)}
         <div className="App">
             <meta charset="UTF-8"></meta>
             <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
@@ -72,9 +72,8 @@ function App(props) {
                 <h4><b>PORTFOLIO</b></h4>
                 </div>
                 <div className="w3-bar-block">
-                <Link to="/" className="nav-link">HOME</Link>
-                <br></br>
-                <Link to="/blog" className="nav-link">BLOG</Link>
+                <Link to="/" className="w3-bar-item w3-button w3-padding"><i className="fa fa-th-large fa-fw w3-margin-right" />HOME</Link>
+                <Link to="/blog" className="w3-bar-item w3-button w3-padding"><i className="fa fa-user fa-fw w3-margin-right" />BLOG</Link>
                 {/* <a onClick={() => navHandle("home")} className={"w3-bar-item w3-button w3-padding" + ((page == "home") ? " w3-text-teal" : "")}><i className="fa fa-th-large fa-fw w3-margin-right" />HOME</a>
                 <a onClick={() => navHandle("blog")} className={"w3-bar-item w3-button w3-padding" + ((page == "blog") ? " w3-text-teal" : "")}><i className="fa fa-user fa-fw w3-margin-right" />BLOG</a> */}
                 <a href="#contact" onClick={() => navHandle("contact")} className="w3-bar-item w3-button w3-padding"><i className="fa fa-envelope fa-fw w3-margin-right" />CONTACT</a>
@@ -105,37 +104,37 @@ function App(props) {
                     <Route exact path="/" element={<Home posts={posts} inspiration={inspiration}></Home>}></Route>
                     <Route exact path="/blog" element={<Blog posts={posts} ></ Blog>}></Route>
                     <Route exact path="/blog/:id" element={<BlogEntry posts={posts}></BlogEntry>}></Route>
+                    <Route exact path="/impressum" element={<Impressum></Impressum>}></Route>
                 </Routes >
                 {/* Container (Contact Section) */}
                 <div className="w3-content w3-container w3-padding-64" id="contact">
                 <h3 className="w3-center">CONTACT ME</h3>
-                <p className="w3-center"><em>I'd love your feedback!</em></p>
                 <div className="w3-row w3-padding-32 w3-section">
-                    <div className="w3-col m4 w3-container">
-                    <img src="./content/rs.png" alt="" className="w3-image w3-round" style={{ width: '100%' }} />
-                    </div>
+                    {/* <div className="w3-col m4 w3-container">
+                        <img src="./content/rs.png" alt="" className="w3-image w3-round" style={{ width: '100%' }} />
+                    </div> */}
                     <div className="w3-col m8 w3-panel">
-                    <div className="w3-large w3-margin-bottom">
-                        <i className="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right" /> Remscheid, DE<br />
-                        {/* <i className="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right" /> Phone: +00 151515<br /> */}
-                        <i className="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right" /> Email: jan.kuepper1998@gmail.com<br />
-                    </div>
-                    {/* <p>Swing by for a cup of <i className="fa fa-coffee" />, or leave me a note:</p> */}
-                    <p>leave me a note:</p>
-                    <form action="/action_page.php" target="_blank">
-                        <div className="w3-row-padding" style={{ margin: '0 -16px 8px -16px' }}>
-                        <div className="w3-half">
-                            <input className="w3-input w3-border" type="text" placeholder="Name" required name="Name" />
-                        </div>
-                        <div className="w3-half">
-                            <input className="w3-input w3-border" type="text" placeholder="Email" required name="Email" />
-                        </div>
-                        </div>
-                        <input className="w3-input w3-border" type="text" placeholder="Message" required name="Message" />
-                        <button className="w3-button w3-black w3-right w3-section" type="submit">
-                        <i className="fa fa-paper-plane" /> SEND MESSAGE
-                        </button>
-                    </form>
+                        {/* <div className="w3-large w3-margin-bottom">
+                            <i className="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right" /> Remscheid, DE<br />
+                            <i className="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right" /> Phone: +00 151515<br />
+                            <i className="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right" /> Email: jan.kuepper1998@gmail.com<br />
+                        </div> */}
+                        {/* <p>Swing by for a cup of <i className="fa fa-coffee" />, or leave me a note:</p> */}
+                        <p>leave me a note:</p>
+                        <form action="/action_page.php" target="_blank">
+                            <div className="w3-row-padding" style={{ margin: '0 -16px 8px -16px' }}>
+                            <div className="w3-half">
+                                <input className="w3-input w3-border" type="text" placeholder="Name" required name="Name" />
+                            </div>
+                            <div className="w3-half">
+                                <input className="w3-input w3-border" type="text" placeholder="Email" required name="Email" />
+                            </div>
+                            </div>
+                            <input className="w3-input w3-border" type="text" placeholder="Message" required name="Message" />
+                            <button className="w3-button w3-black w3-right w3-section" type="submit">
+                            <i className="fa fa-paper-plane" /> SEND MESSAGE
+                            </button>
+                        </form>
                     </div>
                 </div>
                 </div>
@@ -152,12 +151,12 @@ function App(props) {
                     <h3>BLOG POSTS</h3>
                     <ul className="w3-ul w3-hoverable">
                         <li className="w3-padding-16">
-                        <img src={posts[0] ? posts[0].img1200 : ""} alt="" className="w3-left w3-margin-right" style={{ width: '70px' }} />
+                        <img src={posts[0] ? `${window.location.origin}/${posts[0].img1200}` : ""} alt="" className="w3-left w3-margin-right" style={{ width: '70px' }} />
                         <span className="w3-large">{posts[0] ? posts[0].title : ""}</span><br />
                         <span>{posts[0] ? (posts[0].introduction).substr(0, 50) + "..." : ""}</span>
                         </li>
                         <li className="w3-padding-16">
-                        <img src={posts[1] ? posts[1].img1200 : ""} alt="" className="w3-left w3-margin-right" style={{ width: '70px' }} />
+                        <img src={posts[1] ? `${window.location.origin}/${posts[1].img1200}` : ""} alt="" className="w3-left w3-margin-right" style={{ width: '70px' }} />
                         <span className="w3-large">{posts[1] ? posts[1].title : ""}</span><br />
                         <span>{posts[1] ? (posts[1].introduction).substr(0, 50) + "..." : ""}</span>
                         </li>
@@ -175,7 +174,8 @@ function App(props) {
                     </div>
                 </div>
                 </footer>
-                <div className="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" className="w3-hover-opacity">w3.css</a></div>
+                <div className="w3-black w3-center w3-padding-24"><Link to="/impressum" >IMPRESSUM</Link></div>
+
                 {/* End page content */}
             </div>
             </div>

@@ -8,12 +8,10 @@ function BlogEntry(props) {
     const [text, setText] = useState("");
     
     React.useEffect(() => {
-        console.log(id)
-        console.log(props.posts[id])
         if(props.posts[id] != undefined){
             getText(props.posts[id].path);
         }
-    }, []);
+    }, [props.posts]);
 
     async function getText(url) {
         const res = await fetch(`${window.location.origin}/${url}`);

@@ -3,7 +3,7 @@
     <br></br>
     Die Adler Felix Pembaur, Marco Hoffmann und Jan Küpper vom Campana Racing Team starteten bei der offenen Düsseldorfer Stadtmeisterschaft im 4er Verfolgerrennen. Den Auftakt der Veranstaltung machten die 12 4er Teams, die am Vortag per Losverfahren auf 6 Rennen aufgeteilt wurden. Im Vierer-Verfolgungsrennen starten jeweils zwei 4er-Teams, versetzt auf den gegenüberliegenden Seiten der Kö. Gestartet wurde wie auf der Radbahn, das heißt Helfer halten die Fahrer beim Start fest, bevor sie eingeklickt losfahren. Gefahren wurden 3 Runden á 1,4 km. Die Zeit des letzten Teammitglieds wurde gewertet. Das jeweils schnellere von ingesamt 12 Teams kam in dem Ausscheidungsrennen eine Runde weiter.
     <br></br>
-    <img style="width: 100%" src="./content/2021/sep/rundUmDieKoe01.JPG" alt="Düsseldorfer Stadtmeisterschaften">
+    <img style="width: 100%" src="../../content/2021/sep/rundUmDieKoe01.JPG" alt="Düsseldorfer Stadtmeisterschaften">
     </img>
     <br></br>
     Nach dem sich alle Teams zur Besprechung um 09:30 Uhr versammelt haben, wurden erstmals die Gegner eingeschätzt, zwei bis drei bekannte Gesichter waren dabei und schnell wurde klar, dass das Campana Racing Team kein Glück bei der Auslosung hatte. Die gesamte Gruppe in der rechten Hälfte der Tabelle bestand aus augenscheinlich sehr starken Teams und so ging es für die vier als fünftes an den Start.
@@ -14,7 +14,7 @@
     <br></br>
     Für diesen Lauf mussten nochmal alle Kräfte mobilisiert werden, denn bis dahin war das Team Dixsept in jedem Lauf schneller gefahren als das Campana Racing Team. Das Tempo wurde gleich angezogen und das Team funktionierte hervorragend. Rad an Rad ging es über die Strecke. Auf den letzten Metern wurde dann nochmal gesprintet was das Zeug hält und Lenker an Lenker ging es über die Ziellinie. Zu dem Zeitpunkt konnte allerdings niemand sagen, welches Team gewonnen hat, da es augenscheinlich zeitgleich passierte. Erst nach Auswertung der Zeiten kam die erlösende Durchsage, dass das Campana Racing Team mit einer  Zeit von 5:38:66 und nur 24  Hundertstelsekunden Vorsprung gewonnen hat. Somit standen die vier im Finale.
     <br></br>
-    <img style="width: 100%" src="./content/2021/sep/rundUmDieKoe02.JPG" alt="Düsseldorfer Stadtmeisterschaften">
+    <img style="width: 100%" src="../../content/2021/sep/rundUmDieKoe02.JPG" alt="Düsseldorfer Stadtmeisterschaften">
     </img>
     <br></br>
     Am späten Nachmittag folgte das Finale, dort musste ein letztes Mal alles rund laufen und so war es auch. Das Campana Racing Team gewann die Düsseldorfer Stadmeisterschaften im 4er Verfolgerrennen. Zum Abschluss konnte noch auf der Strecke ausgerollt und sich bei den vielen Zuschauern für die Glückwünsche bedankt werden.

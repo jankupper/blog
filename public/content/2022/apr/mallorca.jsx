@@ -2,7 +2,7 @@
     Vergangenes Wochenende ging es für die drei Adler Julian Koschik, Jan Küpper und Felix Pembaur an den Start des berühmten Mallorca Inselrennen M312.
     Der Name des Rennens „M312“ lässt es bereits vermuten, die enorme Streckenlänge mit ihren 312 Kilometern und über 5000 Höhenmetern verlangt den knapp 8.000 Teilnehmern jedes Jahr aufs Neue alles ab und ist eine echte Herausforderung für Jedermann.
     <br></br>
-    <img style="width: 100%" src="./content/2022/apr/mallorca01.jpg" alt="Julian, Felix und Jan in der Startaufstellung">
+    <img style="width: 100%" src="../../content/2022/apr/mallorca01.jpg" alt="Julian, Felix und Jan in der Startaufstellung">
     </img>
     <br></br>
     Die drei Fahrer des Campana Racing Teams haben durch ihr Trainingslager auf Mallorca, dass im Februar stattfand, schon einige Jahreskilometer gesammelt und fühlten sich für das Rennen gut vorbereitet. Dennoch war es für alle drei das erste Mal eine so lange Strecke im Wettkampfformat und sie waren am Renntag entsprechend aufgeregt.
@@ -11,28 +11,28 @@
     <br></br>
     Pünktlich um 6:30 Uhr fiel der Startschuss und das Feld rollte los. Wie im Rennen üblich, wurde das Tempo vorne gleich angezogen. Mit über 50 km/h flogen die Fahrer von Muro über Port de Alcudia nach Pollença, wo sogleich der erste Anstieg zum Col de femenina anstand.
     <br></br>
-    <img style="width: 100%" src="./content/2022/apr/mallorca02.jpg" alt="Julian und Jan schließen nochmal auf">
+    <img style="width: 100%" src="../../content/2022/apr/mallorca02.jpg" alt="Julian und Jan schließen nochmal auf">
     </img>
     <br></br>
     Während Felix mit der Führungsgruppe beinahe schon im Sprint bergauf fuhr, entschieden sich Jan und Julian dazu, nicht direkt zu überziehen und gingen den Berg hinauf bis zum Kloster Lluc einen Gang leichter an. Der Anstieg knüpft über ein paar schnelle Wellen direkt an den zweiten Anstieg, dem höchsten Berg Mallorcas, dem Puig Major an. Die beiden Adler Jan und Julian fuhren ein gleichmäßiges Tempo und kamen dem Gipfel immer näher. So staunte Julian nicht schlecht, als er kurz vor erreichen der Bergspitze, in der Ferne eine weitere grün schwarze Campana Hose erblickte. Jan, ohne Brille nur auf das wesentliche fixiert, konnte das zunächst nicht bestätigen. So blieb nur die Option noch einmal auf den inneren Schweinehund einzureden und auf die Gruppe aufzufahren, ehe es in die 14 km lange Abfahrt hinunter nach Sóller gehen sollte. Tatsächlich war es Felix, den Julian aus der Ferne entdeckt hatte. Die Adler waren nun wieder vereint und rauschten die Kurven hinunter.
     <br></br>
     Die erste Verpflegungsstation oben am Gorg Blau nach Kilometer 50 wurde von der gesamten Spitze übersprungen, die nächste Verpflegungsstation war ca. bei Kilometer 100 in der Karte eingezeichnet. Mit jeweils zwei Flaschen und ein paar Gels lässt sich so eine Distanz gut überbrücken. Die anderen Fahrer wurden zum Teil von Support-Teams vom Streckenrand versorgt und mussten nicht anhalten, da blieb den Adlern ohne Betreuer keine Wahl, um nicht den Anschluss zu verlieren.
     <br></br>
-    <img style="width: 100%" src="./content/2022/apr/mallorca04.jpg" alt="Julian und Jan, ein klasse Duo">
+    <img style="width: 100%" src="../../content/2022/apr/mallorca04.jpg" alt="Julian und Jan, ein klasse Duo">
     </img>
     <br></br>
     Doch nach und nach verloren Jan und Julian leider den Kontakt zu Felix Gruppe und kämpften sich von nun an zu zweit durch die steilen Anstiege und kleinen Dörfchen Mallorcas. Immer wieder motivierten sie sich gegenseitig und erinnerten sich daran genug zu essen und zu trinken. Es war herrlicher Sonnenschein bei 25 Grad und die Menge an Energie und Wasser, die man verbraucht, muss dringend wieder eingeholt werden. Auch sie fanden wieder eine Gruppe, mit der sie bis zur nächsten Verpflegung an der traumhaften mallorquinischen Küstenstraße gemeinsam fahren konnten.
     <br></br>
     Es folgte der schönste Streckenabschnitt Mallorcas, von Banyalbufar die komplette Küstenstraße bis Andratx entlang. Bei besagtem Wetter wahrlich ein Traum. Auch beim Rennen kann man genießen und das taten die beiden in vollen Zügen. Sie scheuchten sich gegenseitig die kleinen Rampen hoch und staunten immer wieder über die herrliche Kulisse, die sich ihnen auftat. Schroffe Felsen und königsblaues Meer, soweit das Auge reicht.
     <br></br>
-    <img style="width: 100%" src="./content/2022/apr/mallorca03.jpg" alt="Küstenstraße nach Andratx">
+    <img style="width: 100%" src="../../content/2022/apr/mallorca03.jpg" alt="Küstenstraße nach Andratx">
     </img>
     <br></br>
     Die Wende der Tour findet in Andratx statt. Hier folgten ein paar weitere Anstiege über Galilea, Puigpunyent bis hin zu dem kleinen Bergdorf Esporles. Den größten Teil der Höhenmeter haben die Fahrer hier bereits hinter sich gebracht und befinden sich in etwa bei Kilometer 150. Es folgen ca. 150 weitere Kilometer, die der teilweise stärkere Gegenwind nicht unbedingt einfacher machte. Sie genossen erstmal die herrliche Abfahrt und schauten mit einem Blick auf den Wasserstand beider Trinkflaschen, hoffnungsvoll der nächsten Verpflegung entgegen.
     <br></br>
     Diese befand sich in Llosetta bei Km 194 und war brechend voll. Man kam kaum an Getränke und Nahrung heran. Das lag daran, dass sich die verschiedenen Strecken hier wieder zusammenschließen. Jeder Teilnehmer hat die Wahl aus drei Strecken, der namensgebenden 312, aber auch die Alternativstrecken mit 225 bzw. 167 Kilometern bieten eine Herausforderung für Jedermann. In Llosetta treffen also alle Distanzen wieder aufeinander. Für die Stimmung in den gegenüberliegenden Cafes sicherlich das Highlight des Jahres und dementsprechend viele Zuschauer waren auch dort an der Strecke. Bevor es also weiter ging, füllten die beiden Adler die Flaschen auf, tranken eine Cola und füllten sich die Trikottaschen mit Riegeln und Gels.
     <br></br>
-    <img style="width: 100%" src="./content/2022/apr/mallorca05.jpg" alt="Zielankunft">
+    <img style="width: 100%" src="../../content/2022/apr/mallorca05.jpg" alt="Zielankunft">
     </img>
     <br></br>
     Im Eiltempo ging es weiter, am Fuße des Tramuntanagebirges, zurück in Richtung Muro. Zunächst ein paar Kilometer alleine, ehe sich eine größere Gruppe von hinten ankündigte, der sich Jan und Julian sofort angeschlossen haben. Der überwiegend wellige Teil mit teils engen Kurven macht noch einmal richtig Spaß, kostet aber durch das ständige Abbremsen und darauffolgende Beschleunigen, richtig viel Kraft. In der Höhe von Sa Pobla muss jeder Fahrer eine folgenschwere Entscheidung treffen. Werden nun 312 oder 225 km gefahren? Jan und Julian waren sich einig, heute werden die 312 gefahren. Leider waren die beiden mit der Idee in dem 15 Fahrer starken Feld alleine und so waren die beiden Adler von nun an auf sich alleine gestellt. Die letzten 100 Kilometer können nochmal richtig zermürbend sein, wenn man sich alleine dem Wind stellen muss. So entschlossen sie sich dazu, kurzzeitig die Geschwindigkeit zu verringern, um zu sehen, ob noch irgendwer versucht aufzuschließen. Tatsächlich entdeckten sie nach einer Weile zwei weitere Fahrer, die sich für die 312 km entschieden haben. Nach kurzer Absprache fuhren die Jungs gemeinsam in einem viel höheren Tempo, das gleichzeitig nicht so ermüdend war. So sammelte die Gruppe immer wieder neue Fahrer ein und wuchs zu einer knapp 20 köpfigen starken Truppe heran. Mit dieser kämpften sie sich gemeinsam durch das Hinterland Mallorcas rund um Arta und stellten sich abwechselnd dem Wind. Als sie dann nach knapp 10 Stunden freudig ins Ziel kamen, wartete Felix auf sie, der wenige Minuten zuvor angekommen ist und auch ein fantastisches Rennen gefahren ist. Mit den Gesamtplatzierungen Platz 30 und 31 konnten Julian und Jan mehr als zufrieden sein. Felix, dessen Zeitnahme nicht funktionierte, ist vermutlich wenige Plätze vor den Beiden gelandet.
